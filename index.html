@@ -14,6 +14,26 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+}
+
+/* corações fundo */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  color: rgba(255,255,255,0.6);
+  animation: subir 6s linear infinite;
+}
+
+@keyframes subir {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.5);
+    opacity: 0;
+  }
 }
 
 .app {
@@ -26,18 +46,26 @@ body {
   padding: 20px;
   overflow-y: auto;
   color: white;
+  z-index: 2;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.9em;
+  opacity: 0.9;
+  margin-bottom: 10px;
 }
 
 .timer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .box {
@@ -55,7 +83,7 @@ h1 {
 
 button {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 12px;
   border: none;
   border-radius: 20px;
@@ -66,7 +94,7 @@ button {
 }
 
 .text {
-  margin-top: 20px;
+  margin-top: 15px;
   background: rgba(0,0,0,0.3);
   padding: 15px;
   border-radius: 15px;
@@ -97,6 +125,7 @@ button {
 
 <div class="app">
   <h1>Oi, meu amor ❤️</h1>
+  <div class="subtitle">Estamos juntos desde 21/02/2026 💞</div>
 
   <div class="timer">
     <div class="box"><span id="meses"></span>meses</div>
@@ -106,17 +135,17 @@ button {
     <div class="box"><span id="segundos"></span>s</div>
   </div>
 
-  <button onclick="mostrar()">Clique aqui 💌</button>
+  <button onclick="mostrar()">Abrir mensagem 💌</button>
 
   <div id="conteudo" class="hidden">
 
     <div class="text">
       Você é, sem dúvida, a melhor coisa que já me aconteceu.
-      Eu nem sei explicar direito, mas desde que você entrou na minha vida, tudo ficou mais leve, mais bonito… mais verdadeiro.
+      Desde que você entrou na minha vida, tudo ficou mais leve e mais bonito.
 
       <br><br>
 
-      Me apaixonar por você foi algo natural, sem esforço. Quando percebi, já era você em tudo.
+      Me apaixonar por você foi algo natural… quando percebi, já era você em tudo.
 
       <br><br>
 
@@ -124,7 +153,7 @@ button {
 
       <br><br>
 
-      Você apareceu num momento em que eu não via sentido em muita coisa… e mudou tudo.
+      Você apareceu quando eu não via mais sentido em muita coisa… e mudou tudo.
 
       <br><br>
 
@@ -176,6 +205,21 @@ setInterval(atualizar, 1000);
 function mostrar() {
   document.getElementById("conteudo").classList.remove("hidden");
 }
+
+/* gerar corações */
+setInterval(() => {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (Math.random() * 20 + 10) + "px";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}, 400);
 </script>
 
 </body>
