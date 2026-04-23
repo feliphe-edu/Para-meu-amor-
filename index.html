@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para você ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 360px;
+  height: 640px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  padding: 20px;
+  overflow-y: auto;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.timer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.box {
+  background: rgba(0,0,0,0.3);
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.box span {
+  display: block;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 20px;
+  background: rgba(0,0,0,0.3);
+  padding: 15px;
+  border-radius: 15px;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+.gallery {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.gallery img {
+  width: 120px;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.hidden {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+  <h1>Oi, meu amor ❤️</h1>
+
+  <div class="timer">
+    <div class="box"><span id="meses"></span>meses</div>
+    <div class="box"><span id="dias"></span>dias</div>
+    <div class="box"><span id="horas"></span>h</div>
+    <div class="box"><span id="minutos"></span>min</div>
+    <div class="box"><span id="segundos"></span>s</div>
+  </div>
+
+  <button onclick="mostrar()">Clique aqui 💌</button>
+
+  <div id="conteudo" class="hidden">
+
+    <div class="text">
+      Você é, sem dúvida, a melhor coisa que já me aconteceu.
+      Eu nem sei explicar direito, mas desde que você entrou na minha vida, tudo ficou mais leve, mais bonito… mais verdadeiro.
+
+      <br><br>
+
+      Me apaixonar por você foi algo natural, sem esforço. Quando percebi, já era você em tudo.
+
+      <br><br>
+
+      Eu amo seu jeito, sua calma, sua risada… amo quem você é de verdade.
+
+      <br><br>
+
+      Você apareceu num momento em que eu não via sentido em muita coisa… e mudou tudo.
+
+      <br><br>
+
+      Em meio a tanta gente falsa nesse mundo, eu encontrei você.
+      E foi a melhor escolha da minha vida.
+
+      <br><br>
+
+      Eu escolheria você mil vezes, em qualquer vida.
+
+      <br><br>
+
+      ❤️ Eu te amo pra sempre ❤️
+    </div>
+
+    <div class="gallery">
+      <img src="foto1.jpeg">
+      <img src="foto2.jpeg">
+      <img src="foto3.jpeg">
+    </div>
+
+  </div>
+</div>
+
+<script>
+const inicio = new Date("2026-02-21T00:00:00");
+
+function atualizar() {
+  const agora = new Date();
+  const diff = agora - inicio;
+
+  const segundos = Math.floor(diff / 1000) % 60;
+  const minutos = Math.floor(diff / (1000 * 60)) % 60;
+  const horas = Math.floor(diff / (1000 * 60 * 60)) % 24;
+  const diasTotais = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+  const meses = Math.floor(diasTotais / 30);
+  const dias = diasTotais % 30;
+
+  document.getElementById("meses").innerText = meses;
+  document.getElementById("dias").innerText = dias;
+  document.getElementById("horas").innerText = horas;
+  document.getElementById("minutos").innerText = minutos;
+  document.getElementById("segundos").innerText = segundos;
+}
+
+setInterval(atualizar, 1000);
+
+function mostrar() {
+  document.getElementById("conteudo").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
