@@ -1,835 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    >
-
-    <meta name="theme-color" content="#13070d">
-
-    <meta
-        name="description"
-        content="Uma página feita com amor para guardar a nossa história."
-    >
-
-    <title>Nosso Cantinho ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap"
-        rel="stylesheet"
-    >
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#6b3045">
+  <meta name="description" content="Um pedacinho da nossa história, feito por Feliphe para Ana Júlia, com todo o amor do mundo.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="9 meses de nós ❤️ | Feliphe & Ana Júlia">
+  <meta property="og:description" content="Ana Júlia, eu fiz um cantinho só nosso. Entra e descobre. ❤️">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="imagens/foto1.jpeg">
+  <title>9 meses de nós ❤️ — Para você, Ana Júlia</title>
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
+  <div class="ambient-orb ambient-orb-one" aria-hidden="true"></div>
+  <div class="ambient-orb ambient-orb-two" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
 
-    <!-- =========================================
-         FUNDO
-    ========================================== -->
+  <!-- ABERTURA: preservada do projeto original, com visual e texto novos -->
+  <section class="intro" id="inicio" aria-labelledby="intro-title">
+    <div class="intro-noise" aria-hidden="true"></div>
+    <header class="intro-topline"><span>para você, com amor</span><span>21 • 11 • 2026</span></header>
+    <div class="intro-inner">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="star">✧</span> uma surpresa do seu Feliphe <span class="star">✧</span></p>
+        <h1 id="intro-title">Ana Júlia,<br><em>9 meses de nós.</em></h1>
+        <p class="intro-script">e eu escolheria você de novo. ♡</p>
+        <p class="intro-description">Talvez eu nem sempre encontre as palavras certas quando estou com você… então fiz esse cantinho para te mostrar um pouquinho do tamanho do meu amor.</p>
+        <button class="primary-button" id="enterButton" type="button">Entra, meu amor <span aria-hidden="true">↗</span></button>
+        <p class="tiny-note">Feito com carinho, do jeitinho que só nós entendemos.</p>
+      </div>
+      <div class="intro-photo-wrap" aria-label="Uma fotografia especial de nós dois">
+        <div class="photo-halo" aria-hidden="true"></div>
+        <div class="hero-polaroid"><img src="imagens/foto1.jpeg" alt="Feliphe e Ana Júlia juntos, sorrindo" fetchpriority="high"><span>minha pessoa favorita ♡</span></div>
+        <span class="photo-sticker photo-sticker-one" aria-hidden="true">♡</span>
+        <span class="photo-sticker photo-sticker-two" aria-hidden="true">✳</span>
+      </div>
+    </div>
+    <div class="intro-footer"><span>FELIPHE + ANA JÚLIA</span><span>DESDE 21.02.2026</span></div>
+  </section>
 
-    <div class="background-glow"></div>
-    <div class="floating-hearts"></div>
+  <main class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ir para o início da nossa história"><span class="brand-heart" aria-hidden="true">♥</span><span><small>nosso cantinho</small><strong>Fê & Ana <i>♡</i></strong></span></a>
+      <button class="music-player" id="musicButton" aria-label="Tocar nossa música" aria-pressed="false" type="button"><span class="music-icon" aria-hidden="true">▶</span><span class="music-info"><strong>Nossa música</strong><small>Toque para ouvir ♪</small></span></button>
+    </header>
 
-
-    <!-- =========================================
-         TELA DE ABERTURA
-    ========================================== -->
-
-    <section class="intro" id="inicio">
-
-        <div class="intro-content">
-
-            <div class="intro-heart">♥</div>
-
-            <p class="eyebrow">
-                UMA PÁGINA FEITA ESPECIALMENTE PARA VOCÊ
-            </p>
-
-            <h1>
-                Nosso<br>
-                cantinho
-            </h1>
-
-            <p class="intro-description">
-                Uma pequena parte da internet reservada
-                para a nossa história.
-            </p>
-
-            <button class="primary-button" id="enterButton">
-                Entrar na nossa história
-                <span>→</span>
-            </button>
-
-        </div>
-
-        <div class="intro-bottom">
-            21.02.2026
-        </div>
-
+    <section class="screen-section section-home" id="home" aria-labelledby="home-title">
+      <div class="date-pill">♥ &nbsp; 21 de novembro de 2026 &nbsp; ♥</div>
+      <div class="welcome-card">
+        <p class="mini-label">pra minha menina favorita</p>
+        <h2 id="home-title">Feliz <em>9 meses,</em><br>meu amor.</h2>
+        <p>Se eu pudesse voltar ao dia em que tudo começou, eu viveria tudo outra vez. Porque desde que você chegou, a minha vida ganhou um sentido ainda mais bonito.</p>
+        <div class="welcome-sign">— do seu Feliphe, sempre. ♡</div>
+        <span class="welcome-decoration" aria-hidden="true">♥</span>
+      </div>
+      <div class="section-heading centered"><p class="mini-label">cada segundo com você vale a pena</p><h2>O nosso tempo, <em>juntinhos.</em></h2><p>21 de fevereiro de 2026: o dia em que começou a minha parte favorita da história.</p></div>
+      <div class="counter-grid" role="timer" aria-label="Tempo de namoro"><div class="counter-item"><strong id="meses">9</strong><span>meses</span></div><div class="counter-item"><strong id="dias">0</strong><span>dias</span></div><div class="counter-item"><strong id="horas">0</strong><span>horas</span></div><div class="counter-item"><strong id="minutos">0</strong><span>minutos</span></div><div class="counter-item"><strong id="segundos">0</strong><span>segundos</span></div></div>
+      <div class="quote-card"><span class="quote-mark" aria-hidden="true">“</span><p>Eu não quero só estar com você nos dias bonitos. Quero ser a mão que você segura quando os dias não forem tão fáceis.</p><span>porque amar você é escolher ficar. ♡</span></div>
     </section>
 
-
-    <!-- =========================================
-         APLICATIVO
-    ========================================== -->
-
-    <main class="app" id="app">
-
-        <!-- TOPO -->
-
-        <header class="topbar">
-
-            <div>
-                <span class="mini-label">
-                    NOSSO CANTINHO
-                </span>
-
-                <h2>
-                    Nós dois <span>♥</span>
-                </h2>
-            </div>
-
-
-            <!-- PLAYER DE MÚSICA -->
-
-            <button
-                class="music-player"
-                id="musicButton"
-                aria-label="Tocar ou pausar música"
-            >
-
-                <span class="music-icon">
-                    ▶
-                </span>
-
-                <span class="music-info">
-                    <strong>Lisboa</strong>
-                    <small>ANAVITÓRIA • Lenine</small>
-                </span>
-
-            </button>
-
-        </header>
-
-
-        <!-- =====================================
-             INÍCIO
-        ====================================== -->
-
-        <section class="screen-section" id="home">
-
-            <div class="welcome-card">
-
-                <div class="welcome-content">
-
-                    <p class="mini-label">
-                        DESDE 21 DE FEVEREIRO DE 2026
-                    </p>
-
-                    <h3>
-                        Cada segundo<br>
-                        vale a pena.
-                    </h3>
-
-                    <p>
-                        E olha só onde já chegamos...
-                    </p>
-
-                </div>
-
-                <div class="big-heart">
-                    ♥
-                </div>
-
-            </div>
-
-
-            <!-- CONTADOR -->
-
-            <div class="section-heading">
-
-                <span>
-                    O TEMPO PASSA
-                </span>
-
-                <h3>
-                    Nosso tempo juntos
-                </h3>
-
-            </div>
-
-
-            <div class="counter-grid">
-
-                <div class="counter-item">
-
-                    <strong id="meses">
-                        0
-                    </strong>
-
-                    <span>
-                        meses
-                    </span>
-
-                </div>
-
-
-                <div class="counter-item">
-
-                    <strong id="dias">
-                        0
-                    </strong>
-
-                    <span>
-                        dias
-                    </span>
-
-                </div>
-
-
-                <div class="counter-item">
-
-                    <strong id="horas">
-                        0
-                    </strong>
-
-                    <span>
-                        horas
-                    </span>
-
-                </div>
-
-
-                <div class="counter-item">
-
-                    <strong id="minutos">
-                        0
-                    </strong>
-
-                    <span>
-                        minutos
-                    </span>
-
-                </div>
-
-
-                <div class="counter-item">
-
-                    <strong id="segundos">
-                        0
-                    </strong>
-
-                    <span>
-                        segundos
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <!-- FRASE -->
-
-            <div class="quote-card">
-
-                <span class="quote-mark">
-                    “
-                </span>
-
-                <p>
-                    Eu não sei exatamente o que o futuro
-                    preparou para nós, mas sei que quero
-                    continuar descobrindo tudo ao seu lado.
-                </p>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             NOSSA HISTÓRIA
-        ====================================== -->
-
-        <section class="screen-section" id="historia">
-
-            <div class="section-heading">
-
-                <span>
-                    A NOSSA HISTÓRIA
-                </span>
-
-                <h3>
-                    Tudo começou aqui.
-                </h3>
-
-            </div>
-
-
-            <div class="timeline">
-
-                <article class="timeline-item">
-
-                    <div class="timeline-dot">
-                        ♥
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <span>
-                            21.02.2026
-                        </span>
-
-                        <h4>
-                            O começo de nós
-                        </h4>
-
-                        <p>
-                            O dia em que começou uma história
-                            que eu espero levar para muitos
-                            e muitos capítulos.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="timeline-item">
-
-                    <div class="timeline-dot">
-                        ✨
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <span>
-                            OS PRIMEIROS MESES
-                        </span>
-
-                        <h4>
-                            Descobrindo um ao outro
-                        </h4>
-
-                        <p>
-                            Conversas, risadas, momentos simples,
-                            aprendizados e cada vez mais motivos
-                            para gostar de estar perto de você.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="timeline-item">
-
-                    <div class="timeline-dot">
-                        🎂
-                    </div>
-
-                    <div class="timeline-card">
-
-                        <span>
-                            05.09.2026
-                        </span>
-
-                        <h4>
-                            Mais um aniversário seu
-                        </h4>
-
-                        <p>
-                            Ver você completando mais um ano de vida
-                            e poder continuar fazendo parte da sua
-                            história é algo que me deixa muito feliz.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="timeline-item">
-
-                    <div class="timeline-dot">
-                        ♾️
-                    </div>
-
-                    <div class="timeline-card future-card">
-
-                        <span>
-                            PRÓXIMO CAPÍTULO
-                        </span>
-
-                        <h4>
-                            Ainda temos muito para viver.
-                        </h4>
-
-                        <p>
-                            Essa parte da história ainda está em branco.
-                            E talvez seja justamente isso que torna
-                            tudo tão especial.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             CARTA
-        ====================================== -->
-
-        <section class="screen-section" id="carta">
-
-            <div class="letter-header">
-
-                <div class="envelope-icon">
-                    💌
-                </div>
-
-                <span>
-                    UMA CARTA PARA VOCÊ
-                </span>
-
-                <h3>
-                    Leia quando quiser
-                    lembrar o quanto eu te amo.
-                </h3>
-
-            </div>
-
-
-            <article class="letter-card">
-
-                <p>
-                    Meu amor,
-                </p>
-
-
-                <p>
-                    Eu poderia passar horas tentando encontrar as
-                    palavras certas para explicar tudo o que sinto
-                    por você, mas ainda assim acho que seria pouco.
-                </p>
-
-
-                <p>
-                    Eu sou apaixonado por você. Pelo seu jeito,
-                    pelo seu sorriso, pela sua risada, pelas nossas
-                    conversas e por todos aqueles pequenos detalhes
-                    que fizeram você se tornar tão importante para mim.
-                </p>
-
-
-                <p>
-                    Você deixou de ser apenas uma pessoa que eu amo.
-                    Você se tornou parte dos meus dias, dos meus
-                    pensamentos, dos meus planos e dos meus sonhos.
-                </p>
-
-
-                <p>
-                    E hoje, olhando para esses quase sete meses,
-                    eu só consigo agradecer por ter você comigo.
-                </p>
-
-
-                <p>
-                    Eu quero que você nunca esqueça disso:
-                    você é extremamente importante para mim.
-                </p>
-
-
-                <p>
-                    Quando penso no futuro, gosto de imaginar nós dois
-                    construindo nossa vida juntos. Nosso cantinho,
-                    nossas coisas, nossas viagens, nossos momentos,
-                    nossos bichinhos e, quem sabe um dia, a família
-                    que tantas vezes imaginamos.
-                </p>
-
-
-                <p>
-                    Eu sonho em ter uma família com você.
-                    Um menino, uma menina, alguns gatinhos,
-                    um cachorrinho e uma casa cheia de histórias
-                    que só nós dois entenderíamos.
-                </p>
-
-
-                <p>
-                    Talvez tudo isso ainda esteja distante.
-                    Mas gosto de sonhar com isso porque, quando penso
-                    no meu futuro, gosto de imaginar você fazendo parte dele.
-                </p>
-
-
-                <p>
-                    Quero continuar ao seu lado nos dias bons,
-                    nos dias difíceis, nas conquistas, nos planos
-                    que derem certo e até naqueles que precisarem
-                    ser refeitos.
-                </p>
-
-
-                <p>
-                    Quero continuar conhecendo você, aprendendo
-                    com você e construindo nossa história com calma,
-                    carinho, respeito e muito amor.
-                </p>
-
-
-                <p>
-                    Obrigado por esses quase sete meses.
-                    Obrigado por cada conversa, cada risada,
-                    cada momento e por simplesmente ser você.
-                </p>
-
-
-                <p>
-                    Eu não sei exatamente quantos capítulos
-                    ainda teremos, mas espero estar ao seu lado
-                    em muitos deles.
-                </p>
-
-
-                <p class="final-letter">
-                    Eu te amo. ❤️
-                </p>
-
-
-                <div class="signature">
-                    Com amor,<br>
-                    seu amor.
-                </div>
-
-            </article>
-
-        </section>
-
-
-        <!-- =====================================
-             FOTOS
-        ====================================== -->
-
-        <section class="screen-section" id="fotos">
-
-            <div class="section-heading">
-
-                <span>
-                    NOSSAS MEMÓRIAS
-                </span>
-
-                <h3>
-                    Momentos que quero guardar.
-                </h3>
-
-            </div>
-
-
-            <div class="gallery">
-
-                <button
-                    class="photo-card rotate-left"
-                    data-image="imagens/foto1.jpeg"
-                >
-
-                    <img
-                        src="imagens/foto1.jpeg"
-                        alt="Nossa foto 1"
-                    >
-
-                    <span>
-                        Uma memória nossa ❤️
-                    </span>
-
-                </button>
-
-
-                <button
-                    class="photo-card rotate-right"
-                    data-image="imagens/foto2.jpeg"
-                >
-
-                    <img
-                        src="imagens/foto2.jpeg"
-                        alt="Nossa foto 2"
-                    >
-
-                    <span>
-                        Mais um momento nosso
-                    </span>
-
-                </button>
-
-
-                <button
-                    class="photo-card rotate-left"
-                    data-image="imagens/foto3.jpeg"
-                >
-
-                    <img
-                        src="imagens/foto3.jpeg"
-                        alt="Nossa foto 3"
-                    >
-
-                    <span>
-                        Um momento especial
-                    </span>
-
-                </button>
-
-
-                <button
-                    class="photo-card rotate-right"
-                    data-image="imagens/foto4.jpeg"
-                >
-
-                    <img
-                        src="imagens/foto4.jpeg"
-                        alt="Nossa foto 4"
-                    >
-
-                    <span>
-                        E que venham muitos outros
-                    </span>
-
-                </button>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             FUTURO
-        ====================================== -->
-
-        <section class="screen-section" id="futuro">
-
-            <div class="section-heading">
-
-                <span>
-                    O QUE EU SONHO
-                </span>
-
-                <h3>
-                    Nosso futuro.
-                </h3>
-
-            </div>
-
-
-            <div class="dream-grid">
-
-                <div class="dream-card">
-
-                    <div class="dream-icon">
-                        🏠
-                    </div>
-
-                    <h4>
-                        Nosso cantinho
-                    </h4>
-
-                    <p>
-                        Um lugar nosso, com nossas coisas,
-                        nossas manias e nossas histórias.
-                    </p>
-
-                </div>
-
-
-                <div class="dream-card">
-
-                    <div class="dream-icon">
-                        🐱
-                    </div>
-
-                    <h4>
-                        Nossos bichinhos
-                    </h4>
-
-                    <p>
-                        Alguns gatinhos, um cachorrinho
-                        e provavelmente pelos espalhados pela casa.
-                    </p>
-
-                </div>
-
-
-                <div class="dream-card">
-
-                    <div class="dream-icon">
-                        👨‍👩‍👧‍👦
-                    </div>
-
-                    <h4>
-                        Nossa família
-                    </h4>
-
-                    <p>
-                        Quem sabe um dia aquele casalzinho
-                        de filhos que a gente imagina.
-                    </p>
-
-                </div>
-
-
-                <div class="dream-card">
-
-                    <div class="dream-icon">
-                        ✈️
-                    </div>
-
-                    <h4>
-                        Nossas aventuras
-                    </h4>
-
-                    <p>
-                        Lugares novos, viagens, histórias
-                        e momentos que ainda nem imaginamos.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             FINAL
-        ====================================== -->
-
-        <section class="ending">
-
-            <div class="ending-heart">
-                ♥
-            </div>
-
-            <span>
-                21.02.2026
-            </span>
-
-            <h2>
-                Nossa história<br>
-                ainda está começando.
-            </h2>
-
-            <p>
-                Feliz quase 7 meses para nós. ❤️
-            </p>
-
-            <button
-                class="restart-button"
-                id="restartButton"
-            >
-                Voltar ao início ↑
-            </button>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================================
-         ÁUDIO
-    ========================================== -->
-
-    <audio
-        id="backgroundMusic"
-        loop
-        preload="metadata"
-    >
-        <source
-            src="musica/musica.mp3"
-            type="audio/mpeg"
-        >
-    </audio>
-
-
-    <!-- =========================================
-         LIGHTBOX
-    ========================================== -->
-
-    <div
-        class="lightbox"
-        id="lightbox"
-    >
-
-        <button
-            class="close-lightbox"
-            id="closeLightbox"
-            aria-label="Fechar foto"
-        >
-            ×
-        </button>
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Foto ampliada"
-        >
-
-    </div>
-
-
-    <!-- =========================================
-         NAVEGAÇÃO MOBILE
-    ========================================== -->
-
-    <nav class="bottom-nav">
-
-        <button
-            data-target="home"
-            class="active"
-        >
-            <span>⌂</span>
-            <small>Início</small>
-        </button>
-
-
-        <button data-target="historia">
-            <span>♥</span>
-            <small>História</small>
-        </button>
-
-
-        <button data-target="carta">
-            <span>✉</span>
-            <small>Carta</small>
-        </button>
-
-
-        <button data-target="fotos">
-            <span>▣</span>
-            <small>Fotos</small>
-        </button>
-
-
-        <button data-target="futuro">
-            <span>✦</span>
-            <small>Futuro</small>
-        </button>
-
-    </nav>
-
-
-    <script src="script.js"></script>
-
+    <section class="screen-section" id="historia" aria-labelledby="historia-title">
+      <div class="section-heading"><p class="mini-label">as páginas que já escrevemos</p><h2 id="historia-title">A nossa <em>história.</em></h2><p>Algumas datas, muitos sentimentos e uma certeza: eu amo dividir a vida com você.</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><span class="timeline-dot" aria-hidden="true">♥</span><div class="timeline-card"><span>21.02.2026</span><h3>O começo de nós</h3><p>Foi aqui que a gente começou. E eu mal imaginava o quanto você ainda ia transformar os meus dias.</p></div></article>
+        <article class="timeline-item"><span class="timeline-dot" aria-hidden="true">✦</span><div class="timeline-card"><span>AO LONGO DESSES MESES</span><h3>Meu lugar favorito virou você</h3><p>Entre conversas, risadas, carinhos e até as nossas bobeiras, fui descobrindo que os momentos mais simples são especiais quando estou com você.</p></div></article>
+        <article class="timeline-item"><span class="timeline-dot" aria-hidden="true">♡</span><div class="timeline-card"><span>05.09.2026</span><h3>O seu aniversário</h3><p>Um dia para comemorar a pessoa maravilhosa que você é. E eu fico feliz demais por poder fazer parte da sua vida.</p></div></article>
+        <article class="timeline-item"><span class="timeline-dot" aria-hidden="true">✳</span><div class="timeline-card special-milestone"><span>21.11.2026</span><h3>Nossos 9 meses</h3><p>Hoje eu não comemoro só uma data. Comemoro você, a gente e a sorte de poder chamar você de meu amor.</p></div></article>
+      </div>
+      <div class="chapters-heading"><p class="mini-label">uma coisinha a mais que preparei</p><h3>9 pedacinhos do meu <em>coração.</em></h3><p>Toque nos corações. Tem uma mensagem minha escondida em cada um deles.</p></div>
+      <div class="chapter-grid">
+        <details class="chapter-card"><summary><span>01</span><strong>O começo</strong><b aria-hidden="true">♡</b></summary><p>Se eu soubesse que aquele começo ia me trazer você, eu teria desejado que o tempo passasse mais devagar para guardar cada segundo.</p></details>
+        <details class="chapter-card"><summary><span>02</span><strong>Seu sorriso</strong><b aria-hidden="true">♡</b></summary><p>Seu sorriso tem um jeito de fazer qualquer dia meu ficar melhor, mesmo quando você nem percebe.</p></details>
+        <details class="chapter-card"><summary><span>03</span><strong>Seu jeitinho</strong><b aria-hidden="true">♡</b></summary><p>Eu amo seu jeito de ser. Até os detalhes que você talvez ache bobos são exatamente os que me fazem gostar mais de você.</p></details>
+        <details class="chapter-card"><summary><span>04</span><strong>Nosso dengo</strong><b aria-hidden="true">♡</b></summary><p>Se depender de mim, nunca vai faltar abraço apertado, beijinho, carinho e um motivo para ficar juntinho.</p></details>
+        <details class="chapter-card"><summary><span>05</span><strong>Nossas risadas</strong><b aria-hidden="true">♡</b></summary><p>Eu amo quando a gente ri de coisas que provavelmente ninguém mais entenderia. É tão nosso, sabe?</p></details>
+        <details class="chapter-card"><summary><span>06</span><strong>O que aprendo</strong><b aria-hidden="true">♡</b></summary><p>Você me ensina todos os dias que amar também é ouvir, cuidar, ter paciência e crescer ao lado de alguém.</p></details>
+        <details class="chapter-card"><summary><span>07</span><strong>Quando dá saudade</strong><b aria-hidden="true">♡</b></summary><p>Tem horas em que eu só queria estar pertinho de você. Porque até depois de um dia juntos eu já fico querendo mais.</p></details>
+        <details class="chapter-card"><summary><span>08</span><strong>Nosso amanhã</strong><b aria-hidden="true">♡</b></summary><p>Quero viver coisas grandes com você, mas também as pequenas: um café, um abraço no fim do dia, um lar cheio de carinho.</p></details>
+        <details class="chapter-card chapter-last"><summary><span>09</span><strong>Minha escolha</strong><b aria-hidden="true">♥</b></summary><p>Hoje, amanhã e em todos os dias em que a vida nos permitir, eu quero continuar escolhendo você. Não por obrigação, mas porque é com você que eu quero estar.</p></details>
+      </div>
+    </section>
+
+    <section class="screen-section photos-section" id="fotos" aria-labelledby="fotos-title">
+      <div class="section-heading centered"><p class="mini-label">momentos que moram em mim</p><h2 id="fotos-title">Nossas <em>memórias.</em></h2><p>Guardei algumas das nossas fotos aqui porque meu coração sorri quando lembra de nós dois.</p></div>
+      <div class="gallery">
+        <button type="button" class="photo-card rotate-left" data-image="imagens/foto1.jpeg" aria-label="Ampliar primeira foto"><img src="imagens/foto1.jpeg" alt="Nós dois em uma selfie juntinhos" loading="lazy"><span>o meu lugar favorito</span></button>
+        <button type="button" class="photo-card rotate-right" data-image="imagens/foto2.jpeg" aria-label="Ampliar segunda foto"><img src="imagens/foto2.jpeg" alt="Um beijo carinhoso em nossa foto" loading="lazy"><span>pertinho de você ♡</span></button>
+        <button type="button" class="photo-card rotate-left" data-image="imagens/foto3.jpeg" aria-label="Ampliar terceira foto"><img src="imagens/foto3.jpeg" alt="Uma lembrança especial registrada em fotografia" loading="lazy"><span>detalhes que guardo</span></button>
+        <button type="button" class="photo-card rotate-right" data-image="imagens/foto4.jpeg" aria-label="Ampliar quarta foto"><img src="imagens/foto4.jpeg" alt="Nós dois juntos em um dia de água e sol" loading="lazy"><span>tantos dias pela frente</span></button>
+      </div>
+      <p class="gallery-note">e ainda falta tanto álbum para a gente preencher… ♡</p>
+    </section>
+
+    <section class="screen-section letter-section" id="carta" aria-labelledby="carta-title">
+      <div class="letter-header"><span class="envelope-icon" aria-hidden="true">✉</span><p class="mini-label">tem algo que eu preciso te dizer</p><h2 id="carta-title">Uma carta <em>só sua.</em></h2><p>Escrevi com o coração. Talvez assim você entenda um pouquinho de tudo o que sinto.</p></div>
+      <details class="letter-reveal" id="letterReveal"><summary><span class="envelope-illustration" aria-hidden="true">♡</span><strong>Uma cartinha do seu Feliphe</strong><span class="letter-instruction">Toque aqui para abrir meu coração</span><span class="letter-open-icon" aria-hidden="true">↗</span></summary>
+        <article class="letter-card">
+          <p class="letter-greeting">Minha Ana Júlia,</p>
+          <p>Hoje a gente completa nove meses juntos. Nove meses que, para muita gente, podem parecer só um pedacinho de tempo. Mas, para mim, significam tanta coisa que às vezes eu nem sei por onde começar.</p>
+          <p>Antes de você, eu nem imaginava que alguém pudesse mudar tanto a forma como eu vejo os meus dias. Aí você chegou, com seu sorriso, seu jeitinho e esse coração que eu amo tanto, e mudou a minha vida de um jeito que eu não consigo explicar direito.</p>
+          <p>Eu sei que nem sempre sou o melhor com as palavras. Às vezes faço brincadeira na hora errada, fico distraído ou não demonstro tudo do jeito que você merece. Mas eu quero que você nunca duvide de uma coisa: <strong>você é uma das pessoas mais importantes da minha vida.</strong></p>
+          <p>Hoje eu nem consigo imaginar a minha rotina sem você. Sem nossas conversas, nossos momentos de carinho, nossas risadas e até as nossas implicâncias bobas. Você virou meu porto seguro, minha companhia preferida e a pessoa para quem eu quero contar tudo.</p>
+          <p>Não é que eu não consiga existir sozinho. É que <strong>a vida ficou infinitamente mais bonita com você nela</strong>, e eu não quero imaginar um futuro em que eu deixe de dividir minhas alegrias, meus planos e meus dias com você.</p>
+          <p>Quero que você saiba que pode contar comigo. Nos dias em que estiver feliz, vou querer comemorar junto. Nos dias difíceis, vou querer sentar do seu lado, ouvir você, segurar sua mão e lembrar que a gente não precisa enfrentar tudo sozinho.</p>
+          <p>Eu quero continuar aprendendo a cuidar de você e do nosso amor. Quero ter paciência, conversar quando alguma coisa não estiver bem, reconhecer meus erros e fazer por onde para te ver feliz. Porque estar ao seu lado é uma escolha que eu faço com carinho, todos os dias.</p>
+          <p>E quando eu penso no futuro, ainda imagino aquele nosso cantinho, as nossas manias, os gatinhos, um cachorrinho, nossas aventuras e, quem sabe um dia, a família que a gente tanto sonha. Mas, acima de qualquer plano, eu quero uma coisa simples: <strong>continuar tendo você comigo.</strong></p>
+          <p>Obrigado por esses nove meses, meu amor. Por ser você. Por fazer meus dias mais leves. Por me deixar viver essa história com você. Eu tenho muito orgulho do nosso amor e uma vontade enorme de viver tudo o que ainda vem pela frente.</p>
+          <p>Se um dia você esquecer o quanto é amada, volta aqui e lê de novo. Porque, enquanto eu puder, vou encontrar jeitos de te lembrar.</p>
+          <p class="final-letter">Eu te amo, minha menina. Muito, muito mesmo. ❤️</p>
+          <p class="letter-signature">Com todo o meu amor,<br><span>seu Feliphe ♡</span></p>
+          <span class="letter-date">21 de novembro de 2026</span>
+        </article>
+      </details>
+    </section>
+
+    <section class="screen-section future-section" id="futuro" aria-labelledby="futuro-title"><div class="section-heading"><p class="mini-label">e daqui pra frente?</p><h2 id="futuro-title">Eu sonho com <em>nós dois.</em></h2><p>Não sei exatamente como será o amanhã. Só sei com quem eu quero construir os meus sonhos.</p></div>
+      <div class="dream-grid"><article class="dream-card"><span aria-hidden="true">⌂</span><h3>Nosso cantinho</h3><p>Uma casa com a nossa cara, nossos hábitos, nossas coisas e muito aconchego.</p></article><article class="dream-card"><span aria-hidden="true">✿</span><h3>Nossos bichinhos</h3><p>Os gatinhos, um cachorrinho e aquela baguncinha boa que a gente imagina.</p></article><article class="dream-card"><span aria-hidden="true">♡</span><h3>Nossa família</h3><p>Quem sabe um dia um menino, uma menina e uma vida inteira de histórias.</p></article><article class="dream-card"><span aria-hidden="true">✈</span><h3>Nossas aventuras</h3><p>Conhecer lugares, viver momentos novos e fazer memórias lado a lado.</p></article></div>
+    </section>
+
+    <section class="ending" id="surpresa" aria-labelledby="surpresa-title"><div class="ending-sparkle" aria-hidden="true">✧ ♥ ✧</div><p class="mini-label">antes de você ir...</p><h2 id="surpresa-title">Ainda tenho <em>uma última coisa</em> para te dizer.</h2><p>Eu escondi essa parte porque queria que você descobrisse sozinha.</p><button type="button" class="primary-button" id="surpriseButton" aria-controls="surpriseMessage" aria-expanded="false">Descobrir minha surpresa <span aria-hidden="true">♡</span></button>
+      <div class="surprise-message" id="surpriseMessage" hidden><p class="mini-label">seu último presentinho de hoje</p><h3>Se eu tivesse que escolher de novo…</h3><p>Entre tantas pessoas, tantos caminhos e tantas possibilidades, eu continuaria procurando o seu sorriso. Porque, de todas as coisas bonitas que me aconteceram, <strong>ter você na minha vida é uma das minhas favoritas.</strong></p><p>Não prometo que todo dia vai ser perfeito. Mas prometo me esforçar para que nunca falte amor, cuidado, conversa, respeito e vontade de fazer dar certo.</p><p class="surprise-big">Feliz 9 meses, Ana Júlia.<br>É você. Hoje e nos próximos capítulos. ❤️</p><span>— seu Feliphe</span></div>
+      <button class="restart-button" id="restartButton" type="button">Recomeçar nossa história ↑</button><p class="end-caption">Feito por Feliphe, exclusivamente para Ana Júlia • 21.11.2026</p>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" loop preload="none"><source src="musica/musica.mp3" type="audio/mpeg"></audio>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Fotografia ampliada" aria-hidden="true"><button type="button" class="close-lightbox" id="closeLightbox" aria-label="Fechar foto">×</button><img id="lightboxImage" alt="Foto ampliada"></div>
+  <nav class="bottom-nav" aria-label="Navegação do nosso site"><button type="button" class="active" data-target="home" aria-label="Ir para início"><span aria-hidden="true">⌂</span><small>Início</small></button><button type="button" data-target="historia" aria-label="Ir para história"><span aria-hidden="true">♡</span><small>História</small></button><button type="button" data-target="fotos" aria-label="Ir para fotos"><span aria-hidden="true">▣</span><small>Fotos</small></button><button type="button" data-target="carta" aria-label="Ir para carta"><span aria-hidden="true">✉</span><small>Carta</small></button><button type="button" data-target="surpresa" aria-label="Ir para surpresa final"><span aria-hidden="true">✧</span><small>Final</small></button></nav>
+  <div class="sr-only" id="liveStatus" aria-live="polite"></div>
 </body>
 </html>

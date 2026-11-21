@@ -1,0 +1,14 @@
+{
+  "name": "Para você ❤️ — Feliphe & Ana Júlia",
+  "short_name": "Para você ❤️",
+  "description": "Nosso cantinho — 9 meses de nós",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff7f2",
+  "theme_color": "#6b3045",
+  "icons": [
+    {"src":"icons/icon-192.png", "sizes":"192x192", "type":"image/png", "purpose":"any maskable"},
+    {"src":"icons/icon-512.png", "sizes":"512x512", "type":"image/png", "purpose":"any maskable"}
+  ]
+}
